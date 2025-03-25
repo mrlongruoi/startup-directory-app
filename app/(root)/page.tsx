@@ -22,13 +22,13 @@ export default async function Home({
     <>
       <section className="pink_container">
         <h1 className="heading">
-          Pitch Your Startup, <br />
-          Connect With Entrepreneurs
+          StartUps của bạn, <br />
+Kết nối với các doanh nhân
         </h1>
 
         <p className="sub-heading !max-w-3xl">
-          Submit Ideas, Vote on Pitches, and Get Noticed in Virtual
-          Competitions.
+          Gửi ý tưởng, bỏ phiếu trên sân và được chú ý trong ảo
+Cuộc thi.
         </p>
 
         <SearchForm query={query} />
@@ -45,7 +45,7 @@ export default async function Home({
               <StartupCard key={post?._id} post={post} />
             ))
           ) : (
-            <p className="no-results">No startups found</p>
+            <p className="no-results">Không tìm thấy các công ty khởi nghiệp</p>
           )}
         </ul>
       </section>

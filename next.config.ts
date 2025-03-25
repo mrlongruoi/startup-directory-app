@@ -18,13 +18,12 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    ppr: "incremental",
-    after: true,
+    ppr: true,
+    
   },
   devIndicators: {
-    appIsrStatus: true,
-    buildActivity: true,
-    buildActivityPosition: "bottom-right",
+    
+    position: 'bottom-left',
   },
 };
 
@@ -32,7 +31,7 @@ export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
-  org: "js-mastery-dk",
+  org: "congty420",
   project: "javascript-nextjs",
 
   // Only print logs for uploading source maps in CI
@@ -56,7 +55,7 @@ export default withSentryConfig(nextConfig, {
   // tunnelRoute: "/monitoring",
 
   // Hides source maps from generated client bundles
-  hideSourceMaps: true,
+ 
 
   // Automatically tree-shake Sentry logger statements to reduce bundle size
   disableLogger: true,

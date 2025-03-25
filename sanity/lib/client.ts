@@ -1,10 +1,10 @@
-import { createClient } from "next-sanity";
+import { createClient } from 'next-sanity'
 
-import { apiVersion, dataset, projectId } from "../env";
+import { apiVersion, dataset, projectId } from '../env'
 
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true, // Set to false if statically generating pages, using ISR or tag-based revalidation
-});
+  useCdn: false, // Đặt thành false nếu các trang phát sinh thống kê, sử dụng xác định lại ISR ​​hoặc dựa trên thẻ
+})
