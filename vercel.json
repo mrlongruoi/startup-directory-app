@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+      "NODE_VERSION": "20.19.0"
     },
     "npmCommand": "npm install --legacy-peer-deps"
   }
