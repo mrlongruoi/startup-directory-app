@@ -18,8 +18,10 @@ const md = markdownit();
 
 export const experimental_ppr = true;
 
-const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
-  const id = (await params).id;
+const Page = async ({ params }: { params: { id: string } }) => {
+  const id = params.id;
+  
+
 
   const [post, playlist] = await Promise.all([
     client.fetch(STARTUP_BY_ID_QUERY, { id }),
