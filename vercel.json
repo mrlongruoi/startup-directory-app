@@ -1,8 +1,0 @@
-{
-  "build": {
-    "env": {
-      "NODE_VERSION": "20.19.0"
-    },
-    "npmCommand": "npm install --legacy-peer-deps"
-  }
-}
