@@ -76,14 +76,14 @@ const Page = async ({ params }: { params: { id: string } }) => {
             <p className="category-tag">{post.category}</p>
           </div>
 
-          <h3 className="text-30-bold">Pitch Details</h3>
+          <h3 className="text-30-bold">Chi tiết sân</h3>
           {parsedContent ? (
             <article
               className="prose max-w-4xl font-work-sans break-all"
               dangerouslySetInnerHTML={{ __html: parsedContent }}
             />
           ) : (
-            <p className="no-result">No details provided</p>
+            <p className="no-result">Không có chi tiết được cung cấp</p>
           )}
         </div>
 
@@ -91,7 +91,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 
         {editorPosts?.length > 0 && (
           <div className="max-w-4xl mx-auto">
-            <p className="text-30-semibold">Editor Picks</p>
+            <p className="text-30-semibold">Biên tập viên chọn</p>
 
             <ul className="mt-7 card_grid-sm">
               {editorPosts.map((post: StartupTypeCard, i: number) => (
