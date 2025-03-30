@@ -19,11 +19,11 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     ppr: true,
-    
+    // clientInstrumentationHook: true
   },
   devIndicators: {
     
-    position: 'bottom-left',
+    buildActivityPosition: 'bottom-left',
   },
 };
 

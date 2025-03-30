@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div>
       <Head>
-        <title>Sentry Onboarding</title>
+        <title>Sentry trên tàu</title>
         <meta name="description" content="Test Sentry for your Next.js app!" />
       </Head>
 
@@ -35,7 +35,7 @@ export default function Page() {
           </svg>
         </h1>
 
-        <p>Get started by sending us a sample error:</p>
+        <p>Bắt đầu bằng cách gửi cho chúng tôi một lỗi mẫu:</p>
         <button
           type="button"
           style={{
@@ -60,15 +60,15 @@ export default function Page() {
             });
           }}
         >
-          Throw error!
+          Lỗi ném!
         </button>
 
         <p>
-          Next, look for the error on the{" "}
+          Tiếp theo, hãy tìm lỗi trên{" "}
           <a href="https://congty420.sentry.io/issues/?project=4509040106668032">Issues Page</a>.
         </p>
         <p style={{ marginTop: "24px" }}>
-          For more information, see{" "}
+          Để biết thêm thông tin, xem{" "}
           <a href="https://docs.sentry.io/platforms/javascript/guides/nextjs/">
             https://docs.sentry.io/platforms/javascript/guides/nextjs/
           </a>
