@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    ppr: true,
+    ppr: false,
     // clientInstrumentationHook: true
   },
   devIndicators: {
